@@ -7,21 +7,19 @@ import {
 } from 'react-bootstrap';
 
 
-import s from './Home.css';
+import s from './AboutUs.css';
 
 
 const title = 'Sagarandcompany';
 
 
-function Home(props, context) {
+function AboutUs(props, context) {
   context.setTitle(title);
   return (
     <div>
       <div className="row">
         <div className="col-lg-12">
-          Sagarandcompany aims at introducing you facts, information and skills accquired through experience
-          or education, the theoretical or practical understanding of Data Structures and Algorithm / programming and
-          coding.This will help to develop true understanding on Data Structures and justified belief on approaches to
+          This will help to develop true understanding on Data Structures and justified belief on approaches to
           solve questions on different segments and coding practices. You need to be enthusiatic, conscious and
           committed.. rest leave on us.. We will let speak your mind.
         </div>
@@ -30,13 +28,7 @@ function Home(props, context) {
   );
 }
 
-Home.propTypes = {
-  // news: PropTypes.arrayOf(PropTypes.shape({
-  //   title: PropTypes.string.isRequired,
-  //   link: PropTypes.string.isRequired,
-  //   contentSnippet: PropTypes.string,
-  // })).isRequired,
-};
-Home.contextTypes = {setTitle: PropTypes.func.isRequired};
+AboutUs.propTypes = {};
+AboutUs.contextTypes = {setTitle: PropTypes.func.isRequired};
 
-export default withStyles(s)(Home);
+export default withStyles(s)(AboutUs);

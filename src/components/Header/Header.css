@@ -6,9 +6,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
 @import '../variables.css';
-
 
 :root {
   --brand-color: #61dafb;
@@ -65,57 +63,72 @@
 }
 
 :global(.navbar-top-links) {
-    margin-right: 0;
+  margin-right: 0;
 
-    & li {
-        display: inline-block;
+&
+li {
+  display: inline-block;
 
-        &:last-child {
-          margin-right: 15px;
-        }
+&
+:last-child {
+  margin-right: 15px;
+}
 
-        & a {
-             padding: 15px;
-             min-height: 50px;
-         }
+&
+a {
+  padding: 15px;
+  min-height: 50px;
+}
 
-    }
+}
 
-    & :global(.dropdown-menu) {
-      & li {
-        display: block;
+&
+:global(.dropdown-menu) {
 
-        &:last-child {
-            margin-right: 0;
-        }
+&
+li {
+  display: block;
 
-        & a {
-          padding: 3px 20px;
-          min-height: 0;
+&
+:last-child {
+  margin-right: 0;
+}
 
-          & div {
-            white-space: normal;
-          }
-        }
-      }
-    }
+&
+a {
+  padding: 3px 20px;
+  min-height: 0;
 
-    & :global(.dropdown-messages) {
-        margin-left: 5px;
-    }
+&
+div {
+  white-space: normal;
+}
 
-    & :global(.dropdown-tasks) {
-        margin-left: -59px;
-    }
+}
+}
+}
 
-    & :global(.dropdown-alerts) {
-        margin-left: -123px;
-    }
+&
+:global(.dropdown-messages) {
+  margin-left: 5px;
+}
 
-    & :global(.dropdown-users) {
-        right: 0;
-        left: auto;
-    }
+&
+:global(.dropdown-tasks) {
+  margin-left: -59px;
+}
+
+&
+:global(.dropdown-alerts) {
+  margin-left: -123px;
+}
+
+&
+:global(.dropdown-users) {
+  right: 0;
+  left: auto;
+}
+
 }
 
 /*.navbar-top-links .dropdown-menu li {
@@ -158,8 +171,6 @@
     right: 0;
     left: auto;
 }*/
-
-
 
 /*.navbar-brand img {
   display: inline-block;
